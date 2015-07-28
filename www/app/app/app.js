@@ -58,6 +58,11 @@ app.config(function ($routeProvider) {
         templateUrl: "app/views/toDoTasks.html"
     });
 
+    $routeProvider.when("/todotasks/introduce/:id", {
+        controller: "toDoTasksController",
+        templateUrl: "app/views/introduceTaskExecute.html"
+    });
+
     $routeProvider.when("/executedtasks", {
         controller: "executedTasksController",
         templateUrl: "app/views/executedTasks.html"
